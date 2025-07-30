@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>passion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <style>
+    .c1 {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+    }
+    .c2{
+      padding: 20px;
+    }
+    .c3{
+      padding: 50px;
+    }
+    .c4{
+      padding-left: 10px;
+      padding-right: 30px;
+
+    }
+    .c5{
+      padding-left: 80px;
+      padding-top: 50px;
+   
+    }
+    .c6{
+      padding-left: 80px;
+      padding-top: 50px;
+    }
+    .r1{
+      background-image: url("https://images.pexels.com/photos/443399/pexels-photo-443399.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      position: relative;
+      min-height: 100vh;
+      
+    }
+    .r1::before{
+      content:"";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+    }
+    .r2{
+      position: relative;
+      min-height: 100vh;
+      padding-left: 80px;
+      padding-top: 80px;
+    }
+    .r3{
+      min-height: 100vh;
+      background-color: rgba(190, 236, 190, 0.212);
+      position: relative;
+      padding-top: 80px;
+    }
+    .r4{
+      position: relative;
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+    .logo{
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .nav-link:hover{
+      border-bottom: 2px solid green;
+    }
+    .innovative-solutions{
+      background-color: green;
+      color: white;
+      border-radius: 15px;
+      border-style: none;
+      padding: 5px 15px;
+    }
+    .heading{
+      font-weight: bold;
+      font-size: 50px;
+      color: white;
+    }
+    .white{
+      color: white;
+    }
+    .explore-services{
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border-style: none;
+      padding: 15px 20px;
+    }
+    .explore-services:hover{
+        box-shadow: 0 5px 10px rgba(66, 93, 66, 0.6);
+        transform:translateY(-5px);
+    }
+    .watch-demo{
+      background-color: transparent;
+      border-style: none;
+      color: green;
+    }
+    .bold{
+      font-weight: bold;
+    }
+    table,th,td{
+      padding-right: 20px;
+    }
+    .green{
+      color: green;
+    }
+    .center{
+      text-align: center;
+    }
+    .card{
+      text-align: center;
+      padding: 20px 60px;
+      color: green;
+      background-color: rgba(0, 0, 0, 0.762);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+
+    }
+    .card:hover{
+      transform:translateY(-5px);
+    }
+    .image{
+      border-radius: 20px;  
+    }
+    hr{
+      border: 1px solid black;
+      margin: 20px 0;
+    }
+    .table2{
+        border-top: 1px solid rgba(128, 128, 128, 0.268);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.268);
+    }
+    .table2 th{
+        padding-top: 40px;
+
+    } 
+    .table2 td{
+        padding-bottom: 40px;
+    }
+    .discover-our-work{
+      background-color: green;
+      color: white;
+      border-radius: 15px;
+      border-style: none;
+      padding: 5px 15px;
+    }
+    .meet-our-team{
+      background-color: white;
+      color: green;
+      border-radius: 15px;
+      border: 2px solid green;
+      padding: 5px 15px;
+    }
+    .meet-our-team:hover{
+      background-color: green;
+      color: white;
+      transform:translateY(-5px);
+      background-color: rgb(7, 92, 7);
+    }
+    .discover-our-work:hover{
+      transform:translateY(-5px);
+      background-color: rgb(7, 92, 7);
+    }
+    .professional-services{
+      background-color: rgba(0, 128, 0, 0.222);
+      color: green;
+      border-radius: 5px;
+      border-style: none;
+    }
+    .request-a-conultation{
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border-style: none;
+      padding: 5px 15px;
+    }
+    .request-a-conultation:hover{
+      background-color: rgb(7, 92, 7);
+    }
+  .featured-services{
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+
+}
+.featured-services:hover{
+  background-color: green;
+  color: white;
+  transform:translateY(-5px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 24px;
+  color: white;
+}
+.featured-services:hover .icon-circle{
+  background-color: white;
+  color: green;
+}
+
+.card-title{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.how-we-work{
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10px;
+}
+.how-we-work:hover {
+  border:1px solid green;
+  transform:translateY(-5px);
+}
+.how-we-work:hover .icon-circle1{
+  zoom: 150%;
+
+}
+.icon-circle1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(42, 160, 42, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 24px;
+  color: green;
+}
+.how-we-work:hover .icon-circle1{
+  background-color: green;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg c1">
+        <p class="d-flex align-items-center mb-0">
+          <span class="ms-4">
+            <i class="fa-solid fa-envelope"></i> contact@gmail.com &nbsp;
+            <i class="fa-solid fa-mobile-screen"></i> +1 5589 55488 55
+          </span>
+          <span class="ms-auto">
+            <i class="fa-brands fa-x-twitter ms-3"></i>
+            <i class="fa-brands fa-facebook ms-3"></i>
+            <i class="fa-brands fa-instagram ms-3"></i>
+            <i class="fa-brands fa-linkedin ms-3 me-5"></i>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="row r1">
+      <div class="col-lg-12 c2">
+        <nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand text-white logo ms-4" href="#">Passion</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white ms-3" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ms-3" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ms-3" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ms-3" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ms-3" href="#">Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white ms-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white ms-3 me-5" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+      </div>
+      <div class="col-lg-6 c3">
+        <button class="innovative-solutions bold">INNOVATIVE SOLUTIONS</button>
+        <h1 class="heading">Transform Your business <br> With Modern Technology</h1><br>
+        <p class="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum consectetur nulla eveniet corrupti doloremque id perspiciatis possimus rerum officia sed harum dolorem, asperiores voluptate. Adipisci autem porro nihil consequuntur!</p>
+        <a href="#"><button class="explore-services bold">Explore Services</button></a>
+        <a href="#"><button class="watch-demo bold ms-4"><i class="fa-solid fa-circle-play"></i>Watch Demo</button></a>
+        <table>
+          <tr>
+            <th class="green logo">500+</th>
+            <th class="green logo">98%</th>
+            <th class="green logo">24/7</th>
+          </tr>
+          <tr>
+            <td class="white">PROJECTS COMPLETED</td>
+            <td class="white">CLIENT SATISFACTION</td>
+            <td class="white">SUPPORT AVAILBLE</td>
+          </tr>
+        </table><br><br>
+      </div>
+      <div class="col-lg-6 c3">
+        <br><br><br><br> <table class="table-card">
+          <tr>
+            <td>
+              <div class="card" >
+                <div class="card-body">
+                  <i class="fa-solid fa-shield"></i>
+                  <p class="card-text white">Secure & Reliable</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="card" >
+                <div class="card-body">
+                  <i class="fa-solid fa-gauge"></i>
+                  <p class="card-text white">High Performance</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <div class="card">
+                <div class="card-body">
+                  <i class="fa-solid fa-people-group"></i>
+                  <p class="card-text white">Expert Team</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <div class="card-body">
+                  <i class="fa-solid fa-award"></i>
+                  <p class="card-text white">Award Winning</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row r2">
+      <div class="col-lg-6 c4">
+        <h1 class="logo">Transforming Ideas Into Reality <br> Since 2015</h1><br>
+        <h5>We are a passionate team of innovators dedicated to creating exceptional digital experiences that drive meaningful results for businesses worldwide.</h5><br>
+        <p>Our journey began with a simple vision: to bridge the gap between cutting-edge technology and human-centered design. Today, we've grown into a trusted partner for companies seeking to transform their digital presence and accelerate their growth.</p>
+        <p>Through collaborative partnerships and innovative solutions, we've helped hundreds of organizations achieve their goals while building lasting relationships founded on trust, transparency, and exceptional results.</p>
+        <table class="table2">
+          <tr>
+            <th class="green logo">8+</th>
+            <th class="green logo">450+</th>
+            <th class="green logo">25</th>
+          </tr>
+          <tr>
+            <td>YEARS EXPERIENCE</td>
+            <td>PROJECTS COMPLETED</td>
+            <td>TEAM MEMBERS</td>
+          </tr>
+        </table><br><br>
+        <a href="#"><button class="discover-our-work ">DISCOVER OUR WORK</button></a>
+        <a href="#"><button class="meet-our-team ms-4">MEAT OUR TEAM</button></a><br><br>
+      </div>
+      <div class="col-lg-6 c4">
+        <br><br><img class="image" src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg" alt="" height="500px" width="500px">
+      </div>
+    </div>
+    <div class="row r3"><br><br>
+      <h3 class="bold center">Featured Services</h3>
+      <hr>
+      <p class="center">Featured Services</p>
+      <div class="col-lg-6 c5">
+            <button class="professional-services">PROFESSIONAL SERVICES</button><br><br>
+            <h1 class="bold">Elevating Business Performance <br> Through Strategic Solutions</h1>
+            <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius risus sed pellentesque auctor. Phasellus gravida magna at tortor cursus, sit amet suscipit tortor malesuada.</p><br>
+            <a href="#"><button class="request-a-conultation">Request a Consultation <i class="fa-solid fa-arrow-right"></i></button></a>
+      </div>
+      <div class="col-lg-6 c5">
+        <img src="https://images.pexels.com/photos/3184660/pexels-photo-3184660.jpeg" alt="" height="300px">
+      </div>
+      <div class="col-lg c5">
+        <table class="table-card2">
+          <tr>
+            <td>
+              <div class="featured-services">
+                <div class="card-body">
+                    <i class="fa-solid fa-signal icon-circle"></i>
+                  <h5 class="card-title">Financial Strategy Development</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti dolorem natus. Tempora libero ipsum!</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="featured-services">
+                <div class="card-body">
+                    <i class="fa-solid fa-chart-line icon-circle"></i>
+                  <h5 class="card-title">Market Expansion Advisory</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti dolorem natus. Tempora libero ipsum!</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="featured-services">
+                <div class="card-body">
+                    <i class="fa-solid fa-shield icon-circle"></i>
+                  <h5 class="card-title">Risk Management Solutions</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti dolorem natus. Tempora libero ipsum!</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="featured-services">
+                <div class="card-body">
+                    <i class="fa-solid fa-lightbulb icon-circle"></i>
+                  <h5 class="card-title">Innovation & Digital Transformation</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti dolorem natus. Tempora libero ipsum!</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="featured-services">
+                <div class="card-body">
+                    <i class="fa-solid fa-people-group icon-circle"></i>
+                  <h5 class="card-title">Talent Management Strategy</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti dolorem natus. Tempora libero ipsum!</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table><br><br>
+      </div>
+    </div>
+    <div class="row r4">
+      <h2 class="bold center">How We Work</h2>
+      <hr>
+      <p class="center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <div class="col-lg c6">
+        <table class="table-card3">
+          <tr>
+            <td>
+              <div class="how-we-work">
+                <div class="card-body">
+                    <i class="fa-solid fa-magnifying-glass icon-circle1"></i><br>
+                  <span class="step">Step1</span><br><br>
+                  <h5 class="card-title">Research & Planning</h5>
+                  <p class="card-text">Nulla facilisi morbi tempus iaculis urna id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="how-we-work">
+                <div class="card-body">
+                    <i class="fa-regular fa-lightbulb icon-circle1"></i><br>
+                  <span class="step">Step2</span><br><br>
+                  <h5 class="card-title">Creative Solutions</h5>
+                  <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="how-we-work">
+                <div class="card-body">
+                    <i class="fa-solid fa-gear icon-circle1"></i><br>
+                  <span class="step">Step3</span><br><br>
+                  <h5 class="card-title">Development</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="how-we-work">
+                <div class="card-body">
+                    <i class="fa-solid fa-rocket icon-circle1"></i><br>
+                  <span class="step">Step4</span><br><br>
+                  <h5 class="card-title">Launch & Support</h5>
+                  <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table><br><br>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

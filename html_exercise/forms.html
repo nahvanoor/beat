@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h1>form</h1>
+        <form action="" method="get" autocomplete="on" id="form1">
+            <label for="fname">first name</label><br>
+            <input type="text" id="fname" name="first" maxlength="3" readonly><br>
+            <label for="lname">last name</label><br>
+            <input type="text" id="lname" name="last" disabled><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">MALE</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">FEMALE</label><br>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">others</label><br>
+
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="sleeping" name="hobbies" checked>
+            <label for="sleeping">sleeping</label><br>
+            <input type="checkbox" id="singing" name="hobbies" value="singing">
+            <label for="singing">singing</label><br>
+            <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+            <label for="dancing">dancing</label><br>
+
+            <fieldset>
+            <legend>Communication Address</legend>
+            <label for="States">States</label><br>
+            <select id="States" name="State" size="2" multiple> 
+                <optgroup label="south India">
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Karnataka" selected>Karnataka</option>
+                </optgroup>
+                <optgroup label="North India">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </optgroup>
+            </select><br>
+
+
+            <input list="city">
+            <datalist id="city">
+                <option value="makkaraparamba">
+                <option value="malappuram">
+                <option value="kottopadam">
+            </datalist><br>
+
+            <label for="address">Address</label><br>
+            <textarea name="address" rows="10" cols="20">
+                Default value
+            </textarea><br>
+            </fieldset>
+
+            <label for="color"> favourite color </label><br>
+            <input type="color" id="color" name="Color" ><br>
+             
+            <label for="date">date of birth</label><br>
+            <input type="date" id="date" name="Date" value="2002-08-02" max="2020-05-12" min="2000-10-21"><br>
+
+            <label for="current date">current date</label><br>
+            <input type="datetime-local" id="current date" name="Current Date"><br>
+
+
+            <label for="email">Email</label><br>
+            <input type="email" name="Email" id="email" required size="100" placeholder="enter your email"><br>
+            
+            <label for="photo">photo</label>
+            <input type="file" id="file" name="File"><br>
+
+            <input type="hidden" id="hidden" name="Hidden">
+
+            <input type="image" src="html_logo.png" alt="submit" width="100px" height="100px"><br>
+
+            <label for="month">Month</label><br>
+            <input type="month" id="month" name="Month"><br>
+
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="Age" min="18" max="30" value="18" step="2"><br>
+
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password" autofocus><br>
+
+            <label for="range">range</label>
+            <input type="range" id="range" name="Range" min="50" max="5000" value="50"><br>
+
+            <label for="search">search</label><br>
+            <input type="search" id="search" name="Search"><br>
+
+            <label for="phone">phone</label><br>
+            <input type="tel" id="phone" name="Tel" pattern="[0-10]{10}"><br>
+
+            <label for="link">link</label><br>
+            <input type="url" id="link" name="Link">
+
+            <input type="submit" value="submit" onclick="alert('submitted successfully!')">
+            <input type="button" value="save" onclick="alert('saved successfully!')">
+            <input type="reset" value="reset" onclick="alert('reseted successfully!')">
+
+            <button type="submit" onclick="alert('submitted successfully!')">Submit</button>
+            <button type="button" onclick="alert('successfully saved!')">Save</button>
+            <button type="reset" onclick="alert('reseted successfully!')">Reset</button>
+
+            
+           
+        </form>
+
+        <label for="Name">Name</label>
+        <input type="text" name="name" id="Name" form="form1">
+    </body>
+</html>

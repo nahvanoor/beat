@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <br><br><br><br>
+    <button type="button" onclick="bulb_on()">Turn on the light</button>
+    <img id="image" src="bulb-off.webp" alt="" height="400px" >
+    <button type="button" onclick="bulb_off()">Turn off the light</button>
+
+
+    <script>
+        function bulb_off(){
+            document.getElementById("image").src="bulb-off.webp";
+        }
+        function bulb_on(){
+            document.getElementById("image").src="bulb-on.jpg";
+        }
+    </script>
+</body>
+</html>

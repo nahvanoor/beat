@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <style>
+    .c1 {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+    }
+    .r1 {
+      background-image: url("https://images.pexels.com/photos/443399/pexels-photo-443399.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      min-height: 100vh;
+    }
+    .r1::before {
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+    }
+    .r2 {
+      padding: 60px 20px;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .nav-link:hover {
+      border-bottom: 2px solid green;
+    }
+    .innovative-solutions {
+      background-color: green;
+      color: white;
+      border-radius: 15px;
+      border: none;
+      padding: 5px 15px;
+    }
+    .heading {
+      font-weight: bold;
+      font-size: 50px;
+      color: white;
+    }
+    .white {
+      color: white;
+    }
+    .explore-services {
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      padding: 15px 20px;
+    }
+    .explore-services:hover {
+      box-shadow: 0 5px 10px rgba(66, 93, 66, 0.6);
+      transform: translateY(-5px);
+    }
+    .watch-demo {
+      background-color: transparent;
+      border: none;
+      color: green;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .green {
+      color: green;
+    }
+    .card {
+      text-align: center;
+      padding: 20px;
+      color: green;
+      background-color: rgba(0, 0, 0, 0.762);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .image {
+      border-radius: 20px;
+      width: 100%;
+      height: auto;
+    }
+    .table2 {
+      border-top: 1px solid rgba(128, 128, 128, 0.268);
+      border-bottom: 1px solid rgba(128, 128, 128, 0.268);
+    }
+    .table2 th {
+      padding-top: 40px;
+    }
+    .table2 td {
+      padding-bottom: 40px;
+    }
+    .discover-our-work {
+      background-color: green;
+      color: white;
+      border-radius: 15px;
+      border: none;
+      padding: 5px 15px;
+    }
+    .meet-our-team {
+      background-color: white;
+      color: green;
+      border-radius: 15px;
+      border: 2px solid green;
+      padding: 5px 15px;
+    }
+    .meet-our-team:hover {
+      background-color: green;
+      color: white;
+      transform: translateY(-5px);
+    }
+    .discover-our-work:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Top Contact Bar -->
+    <div class="row">
+      <div class="col-12 c1">
+        <p class="d-flex align-items-center mb-0">
+          <span class="ms-4">
+            <i class="fa-solid fa-envelope"></i> contact@gmail.com &nbsp;
+            <i class="fa-solid fa-mobile-screen"></i> +1 5589 55488 55
+          </span>
+          <span class="ms-auto me-5">
+            <i class="fa-brands fa-x-twitter ms-3"></i>
+            <i class="fa-brands fa-facebook ms-3"></i>
+            <i class="fa-brands fa-instagram ms-3"></i>
+            <i class="fa-brands fa-linkedin ms-3"></i>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="row r1">
+      <div class="col-12">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand text-white logo ms-4" href="#">Passion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active text-white ms-3" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white ms-3" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link text-white ms-3" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link text-white ms-3" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link text-white ms-3" href="#">Team</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white ms-3" href="#" role="button" data-bs-toggle="dropdown">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-white ms-3 me-5" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-lg-6 col-md-12 p-4">
+        <button class="innovative-solutions bold mb-3">INNOVATIVE SOLUTIONS</button>
+        <h1 class="heading">Transform Your Business <br> With Modern Technology</h1>
+        <p class="white mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum consectetur nulla eveniet corrupti doloremque id perspiciatis possimus rerum officia sed harum dolorem, asperiores voluptate. Adipisci autem porro nihil consequuntur!
+        </p>
+        <div class="mt-4">
+          <a href="#"><button class="explore-services bold">Explore Services</button></a>
+          <a href="#"><button class="watch-demo bold ms-4"><i class="fa-solid fa-circle-play"></i> Watch Demo</button></a>
+        </div>
+        <table class="mt-4">
+          <tr>
+            <th class="green logo">500+</th>
+            <th class="green logo">98%</th>
+            <th class="green logo">24/7</th>
+          </tr>
+          <tr>
+            <td class="white">PROJECTS COMPLETED</td>
+            <td class="white">CLIENT SATISFACTION</td>
+            <td class="white">SUPPORT AVAILABLE</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Cards Section -->
+      <div class="col-lg-6 col-md-12 p-4">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-shield"></i>
+                <p class="card-text white">Secure & Reliable</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-gauge"></i>
+                <p class="card-text white">High Performance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-people-group"></i>
+                <p class="card-text white">Expert Team</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="fa-solid fa-award"></i>
+                <p class="card-text white">Award Winning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="row r2">
+      <div class="col-lg-6 col-md-12 px-lg-5">
+        <h1 class="logo">Transforming Ideas Into Reality <br> Since 2015</h1>
+        <h5 class="mt-3">We are a passionate team of innovators dedicated to creating exceptional digital experiences that drive meaningful results for businesses worldwide.</h5>
+        <p>Our journey began with a simple vision: to bridge the gap between cutting-edge technology and human-centered design. Today, we've grown into a trusted partner for companies seeking to transform their digital presence and accelerate their growth.</p>
+        <p>Through collaborative partnerships and innovative solutions, we've helped hundreds of organizations achieve their goals while building lasting relationships founded on trust, transparency, and exceptional results.</p>
+        <table class="table2 mt-3">
+          <tr>
+            <th class="green logo">8+</th>
+            <th class="green logo">450+</th>
+            <th class="green logo">25</th>
+          </tr>
+          <tr>
+            <td>YEARS EXPERIENCE</td>
+            <td>PROJECTS COMPLETED</td>
+            <td>TEAM MEMBERS</td>
+          </tr>
+        </table>
+        <div class="mt-4">
+          <a href="#"><button class="discover-our-work">DISCOVER OUR WORK</button></a>
+          <a href="#"><button class="meet-our-team ms-3">MEET OUR TEAM</button></a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+        <img class="image img-fluid" src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg" alt="Team Image">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

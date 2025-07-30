@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <p>Addition:6+4=<span id="sum"></span></p>
+    <button type="button" onclick="sum()">add</button>
+    <p>subtraction:6-4=<span id="diff"></span></p>
+    <button type="button" onclick="diff()">sub</button>
+    <p>multiplication:6*4=<span id="mul"></span></p>
+    <button type="button" onclick="mul()">mutiply</button>
+    <p>division:6/4=<span id="div"></span></p>
+    <button type="button" onclick="div()">divide</button>
+
+    <script>
+        let a,b;
+        a=6;
+        b=4;
+        function sum(){
+            document.getElementById("sum").innerText=a+b;
+        }
+        function diff(){
+            document.getElementById("diff").innerText=a-b;
+        }
+        function mul(){
+            document.getElementById("mul").innerText=a*b;
+        }
+        function div(){
+            document.getElementById("div").innerText=a/b;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+div h1{
+    font-style: italic;
+}
+div div h1{
+    font-style: italic;
+}
+h1#demo{
+    color:blueviolet
+}
+.cls{
+    color: pink;
+}
+body{
+    background-color: aqua;
+}

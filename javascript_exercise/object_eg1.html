@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <!-- <script>
+        const person={"Firstname":"Nahva","Lastname":"C","age":22,"Gender":"Female"}
+        document.getElementById('demo').innerText="First name : "+person.Firstname+ "\nLast name : "+person.Lastname +"\nAge : "+person.age +"\nGender : "+person.Gender;
+    </script> -->
+
+
+    <!-- <script>
+        const person={}
+        person.Firstname="Nahva";
+        person.Lastname="C";
+        person.age=22;
+        person.Gender="Female";
+        document.getElementById('demo').innerText="First name : "+person.Firstname+ "\nLast name : "+person.Lastname +"\nAge : "+person.age +"\nGender : "+person.Gender;
+    </script> -->
+
+
+    <script>
+        const person=new Object();
+        person["Firstname"]="Nahva";
+        person["Lastname"]="C";
+        person["age"]=22;
+        person["gender"]="Female";
+        person.fullname=function(){
+            return (this.Firstname+" "+this.Lastname).toUpperCase();
+        }
+        // document.getElementById('demo').innerText="First name : "+person["Firstname"] +"\nLast name : "+person["Lastname"]+ "\nAge : "+person["age"]+ "\nGender : "+person["gender"]+"\nFull name : "+person.fullname()
+    
+        let text="";
+        for(let x in person){
+            if(typeof person[x] !="function"){
+                text +=person[x]+"<br>";
+            }
+        }
+        text+=person.fullname();
+        document.getElementById('demo').innerHTML=text;
+    
+    </script>
+</body>
+</html>

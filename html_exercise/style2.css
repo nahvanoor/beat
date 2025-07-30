@@ -1,0 +1,24 @@
+#c{
+    border-style:dotted ;
+    border-radius: 20px;
+    border-width: thick;
+    border-color: chartreuse;
+}
+#f{
+    border-top-style: dashed;
+    border-bottom-style:dotted ;
+    border-left-style: double;
+    border-right-style: solid ;
+}
+#g{
+    border-style: dashed solid dotted double;
+    border-width: thick 20px medium 10px;
+    border-color: black blue brown blueviolet;
+}
+#a{
+    border-style: dashed dotted;
+}
+
+#b{
+    border-style: groove dashed solid ;
+}
