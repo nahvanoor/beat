@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
+</head>
+
+<style>
+    .ct1{
+        text-align: center;
+    }
+    body{
+        background-color: burlywood;
+    }
+
+    h1{
+        color: brown;
+        font-weight: bold;
+
+    }
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      padding: 16px;
+      margin: 20px;
+      font-family: Arial, sans-serif;
+      border-style: none;
+      background-color: brown;
+      color: burlywood;
+      
+    }
+
+</style>
+<body>
+    <div class="container-fluid ct1">
+        <div class="row">
+            <div class="col-lg">
+                <h1>Library</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <button type="button" onclick="addbook()">
+                    <i class="fa-solid fa-plus"></i> Add book
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function addbook(){
+            const card=document.createElement("div");
+            card.className="card";
+            const row=document.createElement("div");
+            row.className="row"
+            const col1=document.createElement("div");
+            col1.className="col-lg-4"
+            const img = document.createElement('img');
+            img.style.width = '150px';
+            img.style.height = 'auto';
+            img.style.display = 'none'; // hide until image is loaded
+
+            // File input
+            const image = document.createElement('input');
+            image.type = 'file';
+            image.accept = 'image/*';
+            image.onchange = function () {
+                const file = image.files[0];
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                img.src = e.target.result;
+                img.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            };
+
+            image.className="form-control";
+            const col2=document.createElement("div");
+            col2.className='col-lg-8'
+            const name=document.createElement("input");
+            name.type="text";
+            name.placeholder="Enter book name";
+            name.className="form-control";
+            const author=document.createElement("input");
+            author.type="text";
+            author.placeholder="Enter author here";
+            author.className="form-control";
+
+            col1.appendChild(img);
+            col1.appendChild(image);
+            col2.appendChild(name);
+            col2.appendChild(author);
+
+            row.appendChild(col1);
+            row.appendChild(col2);
+            card.appendChild(row)
+            document.body.appendChild(card);
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

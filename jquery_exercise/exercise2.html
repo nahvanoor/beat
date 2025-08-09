@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi, this is paragraph!</p>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+     <!-- <script>
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+                alert("you entered p1!")
+            });
+        });
+     </script>-->
+
+
+
+     <!-- <script>
+        $(document).ready(function(){
+            $("p").mouseup(function(){
+                alert("mouse up over p1!")
+            });
+        });
+     </script> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").mouseleave(function(){
+                alert("byeee,yow may leave now!")
+            });
+        });
+     </script> -->
+
+     
+     <!-- <script>
+        $(document).ready(function(){
+            $("p").mousedown(function(){
+                alert("mouse down the p!")
+            });
+        });
+     </script> -->
+
+     <!-- <script>
+        $(document).ready(function(){
+            $("p").hover(function(){
+                alert("you enter the p!")
+            },
+            function(){
+                alert("bye,you may leave now")
+            });
+        });
+     </script> -->
+
+     <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","yellow");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","green");
+            });
+        });
+
+     </script>
+
+     Name : <input type="text"><br><br>
+     Email : <input type="text">
+
+</body>
+
+
+</html>

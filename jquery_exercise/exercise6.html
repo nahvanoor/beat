@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #button{
+        padding: 10px;
+        background-color: burlywood;
+        text-align: center;
+        border: 1px solid black;
+
+    }
+    #content{
+        padding: 50px;
+        background-color: burlywood;
+        text-align: center;
+        display: none;
+    }
+</style>
+<body>
+    <div id="button">click to slide down</div>
+    <div id="content">Hello world!!!</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#content").slideDown("slow");
+            });
+        });
+    </script> -->
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#content").slideUp("slow");
+            });
+        });
+    </script> -->
+
+
+    <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("#content").slideToggle("slow");
+            });
+        });
+    </script>
+
+</body>
+</html>

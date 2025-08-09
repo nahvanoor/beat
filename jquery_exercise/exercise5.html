@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* img{
+        display: none;
+    } */
+</style>
+<body>
+    <button>click me</button><br><br>
+    <img src="grilled_chicken.jpg" alt="" height="120" width="120"><br>
+    <img src="bulb-off.webp" alt="" height="120" width="120"><br>
+    <img src="bulb-on.jpg" alt="" height="120" width="120"><br>
+    <img src="butter_paneer.jpg" alt="" height="120" width="120"><br>
+    <img src="html_logo.png" alt="" height="120" width="120"><br>
+    <img src="html_logo2.png" alt="" height="120" width="120"><br>
+    <img src="planet.jpg" alt="" height="120" width="120">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").fadeIn("slow");
+            });
+        }); -->
+
+
+        <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").fadeOut("slow");
+            });
+        }); -->
+
+
+        <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").fadeToggle("slow");
+            });
+        }); -->
+
+
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").fadeTo("slow",0.4);
+            });
+        });
+    </script>
+</body>
+</html>

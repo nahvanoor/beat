@@ -14,17 +14,27 @@
     </script> -->
 
 
-    <!-- <script>
+    <script>
         const person={}
         person.Firstname="Nahva";
         person.Lastname="C";
         person.age=22;
         person.Gender="Female";
-        document.getElementById('demo').innerText="First name : "+person.Firstname+ "\nLast name : "+person.Lastname +"\nAge : "+person.age +"\nGender : "+person.Gender;
-    </script> -->
+        // document.getElementById('demo').innerText="First name : "+person.Firstname+ "\nLast name : "+person.Lastname +"\nAge : "+person.age +"\nGender : "+person.Gender;
+    
+        // let text="";
+        // for(let [key,values] of Object.entries(person)){
+        //     text +=key+" : "+values+"<br>"
+        // }
+        // document.getElementById('demo').innerHTML=text;
 
 
-    <script>
+        let myString=JSON.stringify(person);
+        document.getElementById('demo').innerHTML=myString;
+    </script>
+
+
+    <!-- <script>
         const person=new Object();
         person["Firstname"]="Nahva";
         person["Lastname"]="C";
@@ -44,6 +54,6 @@
         text+=person.fullname();
         document.getElementById('demo').innerHTML=text;
     
-    </script>
+    </script> -->
 </body>
 </html>
